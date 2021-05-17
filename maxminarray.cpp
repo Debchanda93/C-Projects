@@ -29,6 +29,12 @@ int main(){
   }
   cout<< "The maximum number in the array is "<<max<<endl;
   cout<< "The minimum number in the array is "<<min<<endl;
+  
+  if(abs(max)>abs(min))
+    cout<<"The maximum number in absolute value is: "<<abs(max)<<endl;
+  else 
+    cout<<"The maximum number in absolute value is: "<<abs(min)<<endl;
+
 
   return 0;
 
