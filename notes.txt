@@ -1,0 +1,6 @@
+Pointers:
+
+Two ways to store a variable: STACK and HEAP.
+
+Usually they are stored as STACK. When functions are written, it allocates variable in the STACK. After function is over, it deallocates the variables. 
+HEAP allows the variable to stay. 
