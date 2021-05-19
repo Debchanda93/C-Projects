@@ -3,4 +3,10 @@ Pointers:
 Two ways to store a variable: STACK and HEAP.
 
 Usually they are stored as STACK. When functions are written, it allocates variable in the STACK. After function is over, it deallocates the variables. 
-HEAP allows the variable to stay. 
+HEAP allows the variable to stay.
+
+Pointer pointing to NULL is a safety net. Whenever we dont have value to point to, the pointer should point to NULL. 
+
+Pointers are usefull for allocating HEAP-DYNAMIC MEMORY and pointing towards it. MEMORY LEAK is when the pointer (pointing to the heap-dynamic memory) is lost. 
+DOUBLE DELETE will crash the program. So be careful. 
+Deleting NULL Pointer has no effect. 
