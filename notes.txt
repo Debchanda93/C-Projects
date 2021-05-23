@@ -10,3 +10,32 @@ Pointer pointing to NULL is a safety net. Whenever we dont have value to point t
 Pointers are usefull for allocating HEAP-DYNAMIC MEMORY and pointing towards it. MEMORY LEAK is when the pointer (pointing to the heap-dynamic memory) is lost. 
 DOUBLE DELETE will crash the program. So be careful. 
 Deleting NULL Pointer has no effect. 
+
+SORTING: There are several sorting algos.
+1. Selection-sort
+2. Insertion-sort
+3. Bubble-sort
+4. Merge-sort
+5. Heap-sort
+6. Quick-sort.......etc
+
+OBJECT ORIENTED PROGRAMMING
+.............................
+
+CLASS : are framework that helps creating multiple objects. Think of it as a blueprint for a house. Its an object initiator. We don't want to live in the blueprint 
+but in the houses that are made from the blueprint. 
+
+ENCAPSULATION: codes written as part of the class have better access to the class than codes that are not. 
+
+A CLASS is an abstract data type. It is created for a more complex data type by combining simpler data type and adding capabilities. 
+
+A variable name 'class' can not be created inside the program. 
+(note) PRIVATE is the default for the classes in C++.
+
+If everything inside a class is PRIVATE, its of no use. We need special tools to access the data inside called MUTATORS(setter) and ACCESSORS(getter).
+
+If we are not changing the data, we should warn C++ that we will not be making changes by marking the function as a constant.  Constant member function cannot change the data and are the only functions that can be called if the object is constant. 
+
+
+
+
