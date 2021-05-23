@@ -36,6 +36,13 @@ If everything inside a class is PRIVATE, its of no use. We need special tools to
 
 If we are not changing the data, we should warn C++ that we will not be making changes by marking the function as a constant.  Constant member function cannot change the data and are the only functions that can be called if the object is constant. 
 
+CONSTRUCTOR: When an object is created, its member data could have garbage values. We should not allow this. Object Oriented Programming menas that we will never have invalid values, even if its just created. 
+
+so CONSTRUCTORs help to initialize the member data of the object whenever the object is created. 
+
+** The default constructor is a function named exactly same as the name of the class( case sensitive), with NO return type and NO parameters. 
+
+
 
 
 
