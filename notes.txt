@@ -82,10 +82,15 @@ public :
 };
 
 int main(){
-  Thing one(1); 
+  Thing one(1); // Value is passed as a pointer. 
   Thing two(2);
   }
 
+NOTE: In this case setting one = two will set both the pointers towards two and one will be lost forever. Hence we have a MEMORY LEAK. 
+To solve this problem, we have to call three functions together. They are:
+1. DESTRUCTOR : Called automatically when object falls out of the scope.
+2. COPY CONSTRUCTOR: Constructs an opbject based on an existing one. 
+3. ASSIGNMENT OPERATOR: Copies one object to the other ( DEEP COPY )
 
 
 
