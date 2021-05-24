@@ -44,6 +44,49 @@ so CONSTRUCTORs help to initialize the member data of the object whenever the ob
 ** Member Initialization list : is the part of the constructor. It has is basically initialization outside the curls of constructor. 
 ** Only one constructor can be called in a class. And only the class that is called that will only be called. Default constructor will not be called by default unless it is called. 
 
+'this' pointer: It is a feature of C++. 'this' pointer points to object itself. eg. when we call d1.setyear(), the 'this' operator is pointing to object Date in side the setyear() function. 
+e.g. void setYear(int newYear){ this -> year = newYear; }  // Although it is not necessary but we can use 'this' pointer here.
+
+OPERATING OVERLOADING ( Exclusive to C++ ) : This are just functions wiht strange function calls.
+e.g.  a + b  is a function to call either 
+     1.  operator+(a + b)
+            or 
+     2.  a.operator+(b). // As a member
+Some operators can not be overloaded in C++. They are namely:
+.  ,  ::  , *.  , sizeof , ?:
+
+Some can be overloaded as member:
+= ( assign operator)
+[] ( array index operator )
+
+Some , almost, cannot be overloaded as a member:
+<< , >>
+
+How to choose between Member vs. Non-Member operator definition ?
+
+- Members have access to the PRIVATE.
+- A function defined as a 'friend' in the class is NOT a member but will have access to PRIVATE. 
+- a + b will work in both the cases
+- a + 5 (object + constant) will work if there is a CONSTRUCTOR which can take 5 as a value and construct an object to add to a.
+- 5 + a (constant + object) will only work if the above CONSTRUCTOR exists and operator+ is a non-member.
+
+CLASS contating dynamic memory:
+******************************
+example: 
+
+class Thing{
+  int* value;
+public : 
+        Thing(int newVal = 0) : value (new int (newVal)){}
+
+};
+
+int main(){
+  Thing one(1); 
+  Thing two(2);
+  }
+
+
 
 
 
