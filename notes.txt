@@ -41,7 +41,7 @@ CONSTRUCTOR: When an object is created, its member data could have garbage value
 so CONSTRUCTORs help to initialize the member data of the object whenever the object is created. 
 
 ** The default constructor is a function named exactly same as the name of the class( case sensitive), with NO return type and NO parameters. 
-
+** Member Initialization list : is the part of the constructor. It has is basically initialization outside the curls of constructor. 
 
 
 
