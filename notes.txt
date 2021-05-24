@@ -92,6 +92,11 @@ To solve this problem, we have to call three functions together. They are:
 2. COPY CONSTRUCTOR: Constructs an opbject based on an existing one. 
 3. ASSIGNMENT OPERATOR: Copies one object to the other ( DEEP COPY )
 
+INHERITANCE
+************
 
+example: Vehicle class and Car class - A Car class should contain all the information of the Vehicle class plus some additional information. In this case, class Car is a derived class of Vehicle. 
+
+Note: When a class inherits another class, every functionalities of the previous class is derived  EXCEPT the CONSTRUCTORS. We have to create a new CONSTRUCTOR for the newly derived class. We might call the existing CONSTRUCTORS of the base class. 
 
 
