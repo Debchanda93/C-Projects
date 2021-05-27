@@ -100,3 +100,5 @@ example: Vehicle class and Car class - A Car class should contain all the inform
 Note: When a class inherits another class, every functionalities of the previous class is derived  EXCEPT the CONSTRUCTORS. We have to create a new CONSTRUCTOR for the newly derived class. We might call the existing CONSTRUCTORS of the base class. 
 
 
+
+
