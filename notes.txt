@@ -129,5 +129,12 @@ int main(){
 }
 
 
+VIRTUAL FUNCTIONS:
+
+- C++ assumes by default BASE class pointer points to a base object, which is for sure not necessarily true. 
+- Unfortunately what is does is, if we call a function via that BASE class pointer, the version of the function that will be called will be of the BASE class though the pointer is pointing to a DERIVED class. 
+- The solution is to mark the function as VIRTUAL. 
+- PURE VIRTUAL , to set a VIRTUAL function = 0; This makes the class, an ABSTRACT class and we CANNOT have an object of this class. 
+  We can create pointers and derive from this class. 
 
 
