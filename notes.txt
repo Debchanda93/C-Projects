@@ -99,6 +99,35 @@ example: Vehicle class and Car class - A Car class should contain all the inform
 
 Note: When a class inherits another class, every functionalities of the previous class is derived  EXCEPT the CONSTRUCTORS. We have to create a new CONSTRUCTOR for the newly derived class. We might call the existing CONSTRUCTORS of the base class. 
 
+ACCESS FROM DERIVED CLASS:
+- PRIVATE information of BASE a class cannot be accessed from a DERIVED class. 
+- We can use PROTECTED in order to access from a DERIVED class. 
+- PROTECTED data cannot to be accessed from outside the BASE and DERIVED class. For example, main() cannot access PROTECTED data. 
+
+POLYMORPHISM:
+- Since every Cat is a Pet, we should be able to copy data between Cats and Pets.
+- Since every Cat is Pet, every Cat will contain all the functions inside the Pets. Though not the same versions. 
+
+SLICING: copying DERIVED class ON TO a BASE class. This always works. Only common items will get copied. 
+
+- Polymorphism in C++ allows us to copy data froom a DERIVED class to a BASE class, but only the base items will get copied.
+- Overloading the assignment operator can allow us to copy from a BASE class into a DERIVED object.(overloading)
+- Since every derived object contains everything in BASE, a BASE pointer can point to a DERIVED object. (polymorphism)
+
+example:
+
+int main(){
+     Pet p;
+     Cat c;
+     Pet* pptr;
+     Cat* cptr;
+     p = c; // Always allowed
+     c = p; // Allowed if operator = (const Pet&) is overloaded.
+     pprt = &c; // Always allowed
+     cptr = &p; // NEVER allowed
+     
+}
+
 
 
 
